@@ -30,7 +30,7 @@ public class UDPClient {
             // get response
             packet = new DatagramPacket(buf, buf.length);
             socket.receive(packet);
-
+            
             // display response
             String received = new String(packet.getData());
             System.out.println("Returned: " + received);
